@@ -1,5 +1,7 @@
 package sgvpb_project
 
+import org.apache.commons.collections.*;
+
 class Product {
 	//int index
 	String productId
@@ -11,7 +13,8 @@ class Product {
 	float pcgLucro
 	boolean deleted
 	static transients = [ 'deleted' ]
-	static belongsTo = [ clientOrder:ClientOrder ] 
+	List clientOrder = new ArrayList()
+	static belongsTo = [ clientOrder:ClientOrder ]
 	
 	static constraints = {
 		//index(blank:false)
@@ -22,6 +25,7 @@ class Product {
 		cor(nullable:false, blank:false)
 		valorUnit(nullable:false, blank:false, max:999F, scale:2)
 		pcgLucro(nullable:false, blank:false, max:100F, scale:2)
+		//clientOrder(nullable:true)
 	}
 	/*
 	static mapping = {

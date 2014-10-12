@@ -3,6 +3,7 @@ package sgvpb_project
 class Colaborator {
 	String firstName
 	String lastName
+	String cpf
 	Date birthDate
 	String role
 	String email
@@ -23,6 +24,7 @@ class Colaborator {
 	static constraints = {
 		firstName(blank:false, nullable:false)
 		lastName(blank:false, nullable:false)
+		cpf(cpf:true)
 		birthDate(blank:false, nullable:false)
 		role(blank:false, nullable:false, inList: ["Administrador", "Cliente", "Funcionário", "Vendedor"])
 		email(mail:true, blank:false)

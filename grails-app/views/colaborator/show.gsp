@@ -41,6 +41,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${colaboratorInstance?.cpf}">
+				<li class="fieldcontain">
+					<span id="cpf-label" class="property-label"><g:message code="colaborator.cpf.label" default="Cpf" /></span>
+					
+						<span class="property-value" aria-labelledby="cpf-label"><g:fieldValue bean="${colaboratorInstance}" field="cpf"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${colaboratorInstance?.birthDate}">
 				<li class="fieldcontain">
 					<span id="birthDate-label" class="property-label"><g:message code="colaborator.birthDate.label" default="Birth Date" /></span>

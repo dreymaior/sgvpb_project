@@ -65,12 +65,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: productInstance, field: 'clientOrder', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: productInstance, field: 'clientOrder', 'error')} ">
 	<label for="clientOrder">
 		<g:message code="product.clientOrder.label" default="Client Order" />
-		<span class="required-indicator">*</span>
+		
 	</label>
-	<g:select id="clientOrder" name="clientOrder.id" from="${sgvpb_project.ClientOrder.list()}" optionKey="id" required="" value="${productInstance?.clientOrder?.id}" class="many-to-one"/>
+	
 
 </div>
 

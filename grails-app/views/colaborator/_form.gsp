@@ -20,6 +20,15 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: colaboratorInstance, field: 'cpf', 'error')} required">
+	<label for="cpf">
+		<g:message code="colaborator.cpf.label" default="Cpf" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="cpf" required="" value="${colaboratorInstance?.cpf}"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: colaboratorInstance, field: 'birthDate', 'error')} required">
 	<label for="birthDate">
 		<g:message code="colaborator.birthDate.label" default="Birth Date" />

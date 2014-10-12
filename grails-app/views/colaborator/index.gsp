@@ -28,13 +28,13 @@
 					
 						<g:sortableColumn property="lastName" title="${message(code: 'colaborator.lastName.label', default: 'Last Name')}" />
 					
+						<g:sortableColumn property="cpf" title="${message(code: 'colaborator.cpf.label', default: 'Cpf')}" />
+					
 						<g:sortableColumn property="birthDate" title="${message(code: 'colaborator.birthDate.label', default: 'Birth Date')}" />
 					
 						<g:sortableColumn property="role" title="${message(code: 'colaborator.role.label', default: 'Role')}" />
 					
 						<g:sortableColumn property="email" title="${message(code: 'colaborator.email.label', default: 'Email')}" />
-					
-						<g:sortableColumn property="phone1" title="${message(code: 'colaborator.phone1.label', default: 'Phone1')}" />
 					
 					</tr>
 				</thead>
@@ -46,13 +46,13 @@
 					
 						<td>${fieldValue(bean: colaboratorInstance, field: "lastName")}</td>
 					
+						<td>${fieldValue(bean: colaboratorInstance, field: "cpf")}</td>
+					
 						<td><g:formatDate date="${colaboratorInstance.birthDate}" /></td>
 					
 						<td>${fieldValue(bean: colaboratorInstance, field: "role")}</td>
 					
 						<td>${fieldValue(bean: colaboratorInstance, field: "email")}</td>
-					
-						<td>${fieldValue(bean: colaboratorInstance, field: "phone1")}</td>
 					
 					</tr>
 				</g:each>

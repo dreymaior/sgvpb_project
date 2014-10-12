@@ -90,7 +90,9 @@
 				<li class="fieldcontain">
 					<span id="clientOrder-label" class="property-label"><g:message code="product.clientOrder.label" default="Client Order" /></span>
 					
-						<span class="property-value" aria-labelledby="clientOrder-label"><g:link controller="clientOrder" action="show" id="${productInstance?.clientOrder?.id}">${productInstance?.clientOrder?.encodeAsHTML()}</g:link></span>
+						<g:each in="${productInstance.clientOrder}" var="c">
+						<span class="property-value" aria-labelledby="clientOrder-label"><g:link controller="clientOrder" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>
