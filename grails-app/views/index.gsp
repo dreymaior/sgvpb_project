@@ -85,15 +85,17 @@
 		<div class="nav" role="navigation">
 			<ul>
 				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-			    <li><a class="list" href="${createLink(uri: '/orders/')}"><g:message code="Pedidos"/></a></li>
+			    <li><a class="list" href="${createLink(uri: '/clientOrder/')}"><g:message code="Pedidos"/></a></li>
 				<li><a class="list" href="${createLink(uri: '/product/')}"><g:message code="Produtos"/></a></li>	
-				<li><a class="list" href="${createLink(uri: '/client/')}"><g:message code="Clientes"/></a></li>
-				<li><a class="list" href="${createLink(uri: '/employee/')}"><g:message code="Funcionários"/></a></li>
+				<li><a class="list" href="${createLink(uri: '/colaborator/')}"><g:message code="Clientes"/></a></li>
 				<li><a class="list" href="${createLink(uri: '/vendor/')}"><g:message code="Fornecedores"/></a></li>
-			    <li><a class="login" href="${createLink(uri: '/login/')}"><g:message code="Login"/></a></li>
+			    
 			<!--   <li><a class="login" href="${createLink(uri: '/logout/')}"><g:message code="Logout"/></a></li> -->
 			    <li><a class="help" href="${createLink(uri: '/help/')}"><g:message code="Ajuda"/></a></li>		
 			</ul>
+			<div id="loginHeader">
+	    		<g:loginControl />
+	  		</div>
 		</div>
 		<div id="status" role="complementary">
 			<h1>Application Status</h1>

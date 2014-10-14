@@ -118,24 +118,25 @@ log4j.main = {
 
 
 // Added by the Spring Security Core plugin:
-grails.plugin.springsecurity.userLookup.userDomainClassName = 'sgvpb_project.User'
-grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'sgvpb_project.UserRole'
-grails.plugin.springsecurity.authority.className = 'sgvpb_project.Role'
-grails.plugin.springsecurity.controllerAnnotations.staticRules = [
-	'/':                              ['permitAll'],
-	'/admin':						  ['permitAll'],
-	'/index':                         ['permitAll'],
-	'/index.gsp':                     ['permitAll'],
-	'/assets/**':                     ['permitAll'],
-	'/**/js/**':                      ['permitAll'],
-	'/**/css/**':                     ['permitAll'],
-	'/**/images/**':                  ['permitAll'],
-	'/**/favicon.ico':                ['permitAll'],
-	'/client/**':					  ['permitAll'],
-	'/seller/**':					  ['permitAll'],
-	'/vendor/**':					  ['permitAll'],
-	'/product/**':					  ['permitAll'],
-	'/employee/**':					  ['permitAll'],
-	'/classDomainUML/**':			  ['permitAll']
-]
+//grails.plugin.springsecurity.userLookup.userDomainClassName = 'sgvpb_project.User'
+//grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'sgvpb_project.UserRole'
+//grails.plugin.springsecurity.authority.className = 'sgvpb_project.Role'
+//grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+//	'/':                              ['permitAll'],
+//	'/admin':						  ['permitAll'],
+//	'/index':                         ['permitAll'],
+//	'/update':						  ['permitAll'],
+//	'/index.gsp':                     ['permitAll'],
+//	'/assets/**':                     ['permitAll'],
+//	'/**/js/**':                      ['permitAll'],
+//	'/**/css/**':                     ['permitAll'],
+//	'/**/images/**':                  ['permitAll'],
+//	'/**/favicon.ico':                ['permitAll'],
+//	'/client/**':					  ['permitAll'],
+//	'/seller/**':					  ['permitAll'],
+//	'/vendor/**':					  ['permitAll'],
+//	'/product/**':					  ['permitAll'],
+//	'/employee/**':					  ['permitAll'],
+//	'/classDomainUML/**':			  ['permitAll']
+//]
 

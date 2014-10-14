@@ -41,6 +41,6 @@ class Colaborator {
 	}
 	
 	def String toString(){
-		return "${firstName} + ${lastName}"
+		return "${firstName} ${lastName}"
 	}
 }

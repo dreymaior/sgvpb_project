@@ -101,4 +101,29 @@ class UserController {
             '*'{ render status: NOT_FOUND }
         }
     }
+	
+	//Se der Merlin voltar aqui
+	def scaffold = User
+	
+	  def login = {}
+	
+	  def authenticate = {
+		def user = User.findByLoginAndPassword(params.login, params.password)
+		if(user){
+		  session.user = user
+		  flash.message = "Hello ${user.person}!"
+		  //redirect(controller:"entry", action:"list")
+		  redirect(uri:'/')
+		}else{
+		  flash.message = "Sorry, ${params.login}. Please try again."
+		  redirect(action:"login")
+		}
+	  }
+	
+	  def logout = {
+		flash.message = "Goodbye ${session.user.person}"
+		session.user = null
+		//redirect(controller:"entry", action:"list")
+		redirect(uri:'/')
+	  }
 }

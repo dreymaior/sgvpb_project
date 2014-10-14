@@ -1,16 +1,18 @@
 package sgvpb_project
 
 class User {
-	String username
+	String login
 	String password
 	Colaborator person
 	
 	String toString(){
-		username
+		login
 	}
 	
+	static hasMany = [entries:Entry]
+	
 	static constraints = {
-		username(blank:false, nullable:false, unique:true)
+		login(unique:true)
 		password(password:true)
 	}
 }
