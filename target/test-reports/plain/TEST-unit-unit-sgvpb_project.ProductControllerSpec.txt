@@ -1,0 +1,56 @@
+Testsuite: sgvpb_project.ProductControllerSpec
+Tests run: 7, Failures: 1, Errors: 2, Time elapsed: 0,708 sec
+------------- Standard Output ---------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+
+Testcase: Test the index action returns the correct model took 0,342 sec
+Testcase: Test the create action returns the correct model took 0,047 sec
+Testcase: Test the save action correctly persists an instance took 0,083 sec
+	Caused an ERROR
+Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at sgvpb_project.ProductController.tt__save_closure9_closure14(ProductController.groovy:43)
+	at sgvpb_project.ProductController.$tt__save(ProductController.groovy:40)
+	at sgvpb_project.ProductControllerSpec.Test the save action correctly persists an instance(ProductControllerSpec.groovy:54)
+
+Testcase: Test that the show action returns the correct model took 0,034 sec
+Testcase: Test that the edit action returns the correct model took 0,029 sec
+Testcase: Test the update action performs an update on a valid domain instance took 0,104 sec
+	Caused an ERROR
+Cannot get property 'id' on null object
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at sgvpb_project.ProductControllerSpec.Test the update action performs an update on a valid domain instance(ProductControllerSpec.groovy:122)
+
+Testcase: Test that the delete action deletes an instance if it exists took 0,039 sec
+	FAILED
+Condition not satisfied:
+
+Product.count() == 1
+        |       |
+        0       false
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Product.count() == 1
+        |       |
+        0       false
+
+	at sgvpb_project.ProductControllerSpec.Test that the delete action deletes an instance if it exists(ProductControllerSpec.groovy:142)
+

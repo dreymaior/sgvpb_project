@@ -29,3 +29,21 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: stockInstance, field: 'history', 'error')} ">
+	<label for="history">
+		<g:message code="stock.history.label" default="History" />
+		
+	</label>
+	<g:select name="history" from="${sgvpb_project.StockHistory.list()}" multiple="multiple" optionKey="id" size="5" value="${stockInstance?.history*.id}" class="many-to-many"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: stockInstance, field: 'usuario', 'error')} required">
+	<label for="usuario">
+		<g:message code="stock.usuario.label" default="Usuario" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="usuario" required="" value="${stockInstance?.usuario}"/>
+
+</div>
+

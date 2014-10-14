@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="2" failures="1" hostname="andrey-note" id="0" name="ClientControllerSpec" package="sgvpb_project" tests="7" time="10.511" timestamp="2014-09-07T20:35:50">
+  <testsuite errors="2" failures="1" hostname="Lucas" id="0" name="ClientOrderControllerSpec" package="sgvpb_project" tests="7" time="6.523" timestamp="2014-10-14T19:25:31">
       <properties />
 
-      <testcase classname="sgvpb_project.ClientControllerSpec" name="Test the index action returns the correct model" time="8.512" />
+      <testcase classname="sgvpb_project.ClientOrderControllerSpec" name="Test the index action returns the correct model" time="5.449" />
 
-      <testcase classname="sgvpb_project.ClientControllerSpec" name="Test the create action returns the correct model" time="0.234" />
+      <testcase classname="sgvpb_project.ClientOrderControllerSpec" name="Test the create action returns the correct model" time="0.158" />
 
-      <testcase classname="sgvpb_project.ClientControllerSpec" name="Test the save action correctly persists an instance" time="0.99">
-          <error message="Cannot redirect for object [sgvpb_project.Colaborator : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [sgvpb_project.Colaborator : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+      <testcase classname="sgvpb_project.ClientOrderControllerSpec" name="Test the save action correctly persists an instance" time="0.59">
+          <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
 	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
-	at sgvpb_project.ClientController.tt__save_closure9_closure14(ClientController.groovy:43)
-	at sgvpb_project.ClientController.$tt__save(ClientController.groovy:40)
-	at sgvpb_project.ClientControllerSpec.Test the save action correctly persists an instance(ClientControllerSpec.groovy:54)
+	at sgvpb_project.ClientOrderController.tt__save_closure9_closure14(ClientOrderController.groovy:43)
+	at sgvpb_project.ClientOrderController.$tt__save(ClientOrderController.groovy:40)
+	at sgvpb_project.ClientOrderControllerSpec.Test the save action correctly persists an instance(ClientOrderControllerSpec.groovy:54)
 </error>
 
       </testcase>
 
-      <testcase classname="sgvpb_project.ClientControllerSpec" name="Test that the show action returns the correct model" time="0.121" />
+      <testcase classname="sgvpb_project.ClientOrderControllerSpec" name="Test that the show action returns the correct model" time="0.035" />
 
-      <testcase classname="sgvpb_project.ClientControllerSpec" name="Test that the edit action returns the correct model" time="0.086" />
+      <testcase classname="sgvpb_project.ClientOrderControllerSpec" name="Test that the edit action returns the correct model" time="0.032" />
 
-      <testcase classname="sgvpb_project.ClientControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.254">
+      <testcase classname="sgvpb_project.ClientOrderControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.109">
           <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
-	at sgvpb_project.ClientControllerSpec.Test the update action performs an update on a valid domain instance(ClientControllerSpec.groovy:122)
+	at sgvpb_project.ClientOrderControllerSpec.Test the update action performs an update on a valid domain instance(ClientOrderControllerSpec.groovy:122)
 </error>
 
       </testcase>
 
-      <testcase classname="sgvpb_project.ClientControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.131">
-          <failure message="Condition not satisfied:&#xa;&#xa;Client.count() == 1&#xa;       |       |&#xa;       0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+      <testcase classname="sgvpb_project.ClientOrderControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.065">
+          <failure message="Condition not satisfied:&#xa;&#xa;ClientOrder.count() == 1&#xa;            |       |&#xa;            0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
 
-Client.count() == 1
-       |       |
-       0       false
+ClientOrder.count() == 1
+            |       |
+            0       false
 
-	at sgvpb_project.ClientControllerSpec.Test that the delete action deletes an instance if it exists(ClientControllerSpec.groovy:142)
+	at sgvpb_project.ClientOrderControllerSpec.Test that the delete action deletes an instance if it exists(ClientOrderControllerSpec.groovy:142)
 </failure>
 
       </testcase>
@@ -59,42 +59,42 @@ Client.count() == 1
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="2" failures="1" hostname="andrey-note" id="1" name="SellerControllerSpec" package="sgvpb_project" tests="7" time="1.416" timestamp="2014-09-07T20:36:02">
+  <testsuite errors="2" failures="1" hostname="Lucas" id="1" name="ColaboratorControllerSpec" package="sgvpb_project" tests="7" time="0.759" timestamp="2014-10-14T19:25:38">
       <properties />
 
-      <testcase classname="sgvpb_project.SellerControllerSpec" name="Test the index action returns the correct model" time="0.459" />
+      <testcase classname="sgvpb_project.ColaboratorControllerSpec" name="Test the index action returns the correct model" time="0.328" />
 
-      <testcase classname="sgvpb_project.SellerControllerSpec" name="Test the create action returns the correct model" time="0.09" />
+      <testcase classname="sgvpb_project.ColaboratorControllerSpec" name="Test the create action returns the correct model" time="0.042" />
 
-      <testcase classname="sgvpb_project.SellerControllerSpec" name="Test the save action correctly persists an instance" time="0.176">
-          <error message="Cannot redirect for object [sgvpb_project.Colaborator : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [sgvpb_project.Colaborator : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+      <testcase classname="sgvpb_project.ColaboratorControllerSpec" name="Test the save action correctly persists an instance" time="0.111">
+          <error message="Cannot redirect for object [null null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null null] it is not a domain or has no identifier. Use an explicit redirect instead 
 	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
-	at sgvpb_project.SellerController.tt__save_closure9_closure14(SellerController.groovy:43)
-	at sgvpb_project.SellerController.$tt__save(SellerController.groovy:40)
-	at sgvpb_project.SellerControllerSpec.Test the save action correctly persists an instance(SellerControllerSpec.groovy:54)
+	at sgvpb_project.ColaboratorController.tt__save_closure9_closure14(ColaboratorController.groovy:43)
+	at sgvpb_project.ColaboratorController.$tt__save(ColaboratorController.groovy:40)
+	at sgvpb_project.ColaboratorControllerSpec.Test the save action correctly persists an instance(ColaboratorControllerSpec.groovy:54)
 </error>
 
       </testcase>
 
-      <testcase classname="sgvpb_project.SellerControllerSpec" name="Test that the show action returns the correct model" time="0.129" />
+      <testcase classname="sgvpb_project.ColaboratorControllerSpec" name="Test that the show action returns the correct model" time="0.033" />
 
-      <testcase classname="sgvpb_project.SellerControllerSpec" name="Test that the edit action returns the correct model" time="0.091" />
+      <testcase classname="sgvpb_project.ColaboratorControllerSpec" name="Test that the edit action returns the correct model" time="0.045" />
 
-      <testcase classname="sgvpb_project.SellerControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.282">
+      <testcase classname="sgvpb_project.ColaboratorControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.102">
           <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
-	at sgvpb_project.SellerControllerSpec.Test the update action performs an update on a valid domain instance(SellerControllerSpec.groovy:122)
+	at sgvpb_project.ColaboratorControllerSpec.Test the update action performs an update on a valid domain instance(ColaboratorControllerSpec.groovy:122)
 </error>
 
       </testcase>
 
-      <testcase classname="sgvpb_project.SellerControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.081">
-          <failure message="Condition not satisfied:&#xa;&#xa;Seller.count() == 1&#xa;       |       |&#xa;       0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+      <testcase classname="sgvpb_project.ColaboratorControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.066">
+          <failure message="Condition not satisfied:&#xa;&#xa;Colaborator.count() == 1&#xa;            |       |&#xa;            0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
 
-Seller.count() == 1
-       |       |
-       0       false
+Colaborator.count() == 1
+            |       |
+            0       false
 
-	at sgvpb_project.SellerControllerSpec.Test that the delete action deletes an instance if it exists(SellerControllerSpec.groovy:142)
+	at sgvpb_project.ColaboratorControllerSpec.Test that the delete action deletes an instance if it exists(ColaboratorControllerSpec.groovy:142)
 </failure>
 
       </testcase>
@@ -118,15 +118,248 @@ Seller.count() == 1
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="2" failures="1" hostname="andrey-note" id="2" name="VendorControllerSpec" package="sgvpb_project" tests="7" time="1.675" timestamp="2014-09-07T20:36:00">
+  <testsuite errors="2" failures="1" hostname="Lucas" id="2" name="ProductControllerSpec" package="sgvpb_project" tests="7" time="0.708" timestamp="2014-10-14T19:25:39">
       <properties />
 
-      <testcase classname="sgvpb_project.VendorControllerSpec" name="Test the index action returns the correct model" time="0.635" />
+      <testcase classname="sgvpb_project.ProductControllerSpec" name="Test the index action returns the correct model" time="0.342" />
 
-      <testcase classname="sgvpb_project.VendorControllerSpec" name="Test the create action returns the correct model" time="0.071" />
+      <testcase classname="sgvpb_project.ProductControllerSpec" name="Test the create action returns the correct model" time="0.047" />
 
-      <testcase classname="sgvpb_project.VendorControllerSpec" name="Test the save action correctly persists an instance" time="0.222">
-          <error message="Cannot redirect for object [sgvpb_project.Colaborator : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [sgvpb_project.Colaborator : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+      <testcase classname="sgvpb_project.ProductControllerSpec" name="Test the save action correctly persists an instance" time="0.084">
+          <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at sgvpb_project.ProductController.tt__save_closure9_closure14(ProductController.groovy:43)
+	at sgvpb_project.ProductController.$tt__save(ProductController.groovy:40)
+	at sgvpb_project.ProductControllerSpec.Test the save action correctly persists an instance(ProductControllerSpec.groovy:54)
+</error>
+
+      </testcase>
+
+      <testcase classname="sgvpb_project.ProductControllerSpec" name="Test that the show action returns the correct model" time="0.034" />
+
+      <testcase classname="sgvpb_project.ProductControllerSpec" name="Test that the edit action returns the correct model" time="0.029" />
+
+      <testcase classname="sgvpb_project.ProductControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.105">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at sgvpb_project.ProductControllerSpec.Test the update action performs an update on a valid domain instance(ProductControllerSpec.groovy:122)
+</error>
+
+      </testcase>
+
+      <testcase classname="sgvpb_project.ProductControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.04">
+          <failure message="Condition not satisfied:&#xa;&#xa;Product.count() == 1&#xa;        |       |&#xa;        0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Product.count() == 1
+        |       |
+        0       false
+
+	at sgvpb_project.ProductControllerSpec.Test that the delete action deletes an instance if it exists(ProductControllerSpec.groovy:142)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Lucas" id="3" name="StockControllerSpec" package="sgvpb_project" tests="7" time="0.605" timestamp="2014-10-14T19:25:39">
+      <properties />
+
+      <testcase classname="sgvpb_project.StockControllerSpec" name="Test the index action returns the correct model" time="0.252" />
+
+      <testcase classname="sgvpb_project.StockControllerSpec" name="Test the create action returns the correct model" time="0.029" />
+
+      <testcase classname="sgvpb_project.StockControllerSpec" name="Test the save action correctly persists an instance" time="0.108">
+          <error message="Cannot redirect for object [sgvpb_project.Stock : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [sgvpb_project.Stock : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at sgvpb_project.StockController.tt__save_closure9_closure14(StockController.groovy:43)
+	at sgvpb_project.StockController.$tt__save(StockController.groovy:40)
+	at sgvpb_project.StockControllerSpec.Test the save action correctly persists an instance(StockControllerSpec.groovy:54)
+</error>
+
+      </testcase>
+
+      <testcase classname="sgvpb_project.StockControllerSpec" name="Test that the show action returns the correct model" time="0.032" />
+
+      <testcase classname="sgvpb_project.StockControllerSpec" name="Test that the edit action returns the correct model" time="0.039" />
+
+      <testcase classname="sgvpb_project.StockControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.066">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at sgvpb_project.StockControllerSpec.Test the update action performs an update on a valid domain instance(StockControllerSpec.groovy:122)
+</error>
+
+      </testcase>
+
+      <testcase classname="sgvpb_project.StockControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.048">
+          <failure message="Condition not satisfied:&#xa;&#xa;Stock.count() == 1&#xa;      |       |&#xa;      0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Stock.count() == 1
+      |       |
+      0       false
+
+	at sgvpb_project.StockControllerSpec.Test that the delete action deletes an instance if it exists(StockControllerSpec.groovy:142)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="2" hostname="Lucas" id="4" name="StockHistoryControllerSpec" package="sgvpb_project" tests="7" time="0.759" timestamp="2014-10-14T19:25:40">
+      <properties />
+
+      <testcase classname="sgvpb_project.StockHistoryControllerSpec" name="Test the index action returns the correct model" time="0.317" />
+
+      <testcase classname="sgvpb_project.StockHistoryControllerSpec" name="Test the create action returns the correct model" time="0.028" />
+
+      <testcase classname="sgvpb_project.StockHistoryControllerSpec" name="Test the save action correctly persists an instance" time="0.107">
+          <failure message="Condition not satisfied:&#xa;&#xa;model.stockHistoryInstance!= null&#xa;|     |                   |&#xa;[:]   null                false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.stockHistoryInstance!= null
+|     |                   |
+[:]   null                false
+
+	at sgvpb_project.StockHistoryControllerSpec.Test the save action correctly persists an instance(StockHistoryControllerSpec.groovy:46)
+</failure>
+
+      </testcase>
+
+      <testcase classname="sgvpb_project.StockHistoryControllerSpec" name="Test that the show action returns the correct model" time="0.041" />
+
+      <testcase classname="sgvpb_project.StockHistoryControllerSpec" name="Test that the edit action returns the correct model" time="0.038" />
+
+      <testcase classname="sgvpb_project.StockHistoryControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.117">
+          <failure message="Condition not satisfied:&#xa;&#xa;view == &apos;edit&apos;&#xa;|    |&#xa;null false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+view == &apos;edit&apos;
+|    |
+null false
+
+	at sgvpb_project.StockHistoryControllerSpec.Test the update action performs an update on a valid domain instance(StockHistoryControllerSpec.groovy:112)
+</failure>
+
+      </testcase>
+
+      <testcase classname="sgvpb_project.StockHistoryControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.087" />
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Lucas" id="5" name="UserControllerSpec" package="sgvpb_project" tests="7" time="0.592" timestamp="2014-10-14T19:25:41">
+      <properties />
+
+      <testcase classname="sgvpb_project.UserControllerSpec" name="Test the index action returns the correct model" time="0.281" />
+
+      <testcase classname="sgvpb_project.UserControllerSpec" name="Test the create action returns the correct model" time="0.034" />
+
+      <testcase classname="sgvpb_project.UserControllerSpec" name="Test the save action correctly persists an instance" time="0.095">
+          <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at sgvpb_project.UserController.tt__save_closure12_closure17(UserController.groovy:43)
+	at sgvpb_project.UserController.$tt__save(UserController.groovy:40)
+	at sgvpb_project.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:54)
+</error>
+
+      </testcase>
+
+      <testcase classname="sgvpb_project.UserControllerSpec" name="Test that the show action returns the correct model" time="0.028" />
+
+      <testcase classname="sgvpb_project.UserControllerSpec" name="Test that the edit action returns the correct model" time="0.027" />
+
+      <testcase classname="sgvpb_project.UserControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.069">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at sgvpb_project.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:122)
+</error>
+
+      </testcase>
+
+      <testcase classname="sgvpb_project.UserControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.034">
+          <failure message="Condition not satisfied:&#xa;&#xa;User.count() == 1&#xa;     |       |&#xa;     0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at sgvpb_project.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:142)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Lucas" id="6" name="VendorControllerSpec" package="sgvpb_project" tests="7" time="0.639" timestamp="2014-10-14T19:25:41">
+      <properties />
+
+      <testcase classname="sgvpb_project.VendorControllerSpec" name="Test the index action returns the correct model" time="0.286" />
+
+      <testcase classname="sgvpb_project.VendorControllerSpec" name="Test the create action returns the correct model" time="0.043" />
+
+      <testcase classname="sgvpb_project.VendorControllerSpec" name="Test the save action correctly persists an instance" time="0.106">
+          <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
 	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
 	at sgvpb_project.VendorController.tt__save_closure9_closure14(VendorController.groovy:43)
 	at sgvpb_project.VendorController.$tt__save(VendorController.groovy:40)
@@ -135,18 +368,18 @@ Seller.count() == 1
 
       </testcase>
 
-      <testcase classname="sgvpb_project.VendorControllerSpec" name="Test that the show action returns the correct model" time="0.084" />
+      <testcase classname="sgvpb_project.VendorControllerSpec" name="Test that the show action returns the correct model" time="0.029" />
 
-      <testcase classname="sgvpb_project.VendorControllerSpec" name="Test that the edit action returns the correct model" time="0.119" />
+      <testcase classname="sgvpb_project.VendorControllerSpec" name="Test that the edit action returns the correct model" time="0.026" />
 
-      <testcase classname="sgvpb_project.VendorControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.183">
+      <testcase classname="sgvpb_project.VendorControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.08">
           <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
 	at sgvpb_project.VendorControllerSpec.Test the update action performs an update on a valid domain instance(VendorControllerSpec.groovy:122)
 </error>
 
       </testcase>
 
-      <testcase classname="sgvpb_project.VendorControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.171">
+      <testcase classname="sgvpb_project.VendorControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.044">
           <failure message="Condition not satisfied:&#xa;&#xa;Vendor.count() == 1&#xa;       |       |&#xa;       0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
 
 Vendor.count() == 1

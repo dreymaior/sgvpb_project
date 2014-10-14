@@ -55,6 +55,8 @@
 /AssetUrlMappings.class
 /DbdocUrlMappings$__clinit__closure1.class
 /DbdocUrlMappings.class
+/DefaultWebXmlConfig$_run_closure1.class
+/DefaultWebXmlConfig.class
 /JQueryConfig$_run_closure1.class
 /JQueryConfig.class
 /JQueryPluginResources$_run_closure1.class
@@ -81,5 +83,3 @@
 /JQueryTagLib$_closure4.class
 /JQueryTagLib$_closure5.class
 /JQueryTagLib.class
-/DefaultWebXmlConfig$_run_closure1.class
-/DefaultWebXmlConfig.class
