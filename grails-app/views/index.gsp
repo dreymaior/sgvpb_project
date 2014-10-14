@@ -89,13 +89,10 @@
 				<li><a class="list" href="${createLink(uri: '/product/')}"><g:message code="Produtos"/></a></li>	
 				<li><a class="list" href="${createLink(uri: '/colaborator/')}"><g:message code="Clientes"/></a></li>
 				<li><a class="list" href="${createLink(uri: '/vendor/')}"><g:message code="Fornecedores"/></a></li>
-			    
+			    <li><g:loginControl /></li> <!-- LOGIN -->
 			<!--   <li><a class="login" href="${createLink(uri: '/logout/')}"><g:message code="Logout"/></a></li> -->
 			    <li><a class="help" href="${createLink(uri: '/help/')}"><g:message code="Ajuda"/></a></li>		
-			</ul>
-			<div id="loginHeader">
-	    		<g:loginControl />
-	  		</div>
+			</ul>			
 		</div>
 		<div id="status" role="complementary">
 			<h1>Application Status</h1>
