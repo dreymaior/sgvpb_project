@@ -26,6 +26,10 @@
 					
 						<g:sortableColumn property="user" title="${message(code: 'stockHistory.user.label', default: 'User')}" />
 					
+						<g:sortableColumn property="data" title="${message(code: 'stockHistory.data.label', default: 'Data')}" />
+					
+						<g:sortableColumn property="quantidade" title="${message(code: 'stockHistory.quantidade.label', default: 'Quantidade')}" />
+					
 					</tr>
 				</thead>
 				<tbody>
@@ -33,6 +37,10 @@
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
 						<td><g:link action="show" id="${stockHistoryInstance.id}">${fieldValue(bean: stockHistoryInstance, field: "user")}</g:link></td>
+					
+						<td><g:formatDate date="${stockHistoryInstance.data}" /></td>
+					
+						<td>${fieldValue(bean: stockHistoryInstance, field: "quantidade")}</td>
 					
 					</tr>
 				</g:each>

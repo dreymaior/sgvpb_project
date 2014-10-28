@@ -50,17 +50,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${stockInstance?.history}">
-				<li class="fieldcontain">
-					<span id="history-label" class="property-label"><g:message code="stock.history.label" default="History" /></span>
-					
-						<g:each in="${stockInstance.history}" var="h">
-						<span class="property-value" aria-labelledby="history-label"><g:link controller="stockHistory" action="show" id="${h.id}">${h?.encodeAsHTML()}</g:link></span>
-						</g:each>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${stockInstance?.usuario}">
 				<li class="fieldcontain">
 					<span id="usuario-label" class="property-label"><g:message code="stock.usuario.label" default="Usuario" /></span>

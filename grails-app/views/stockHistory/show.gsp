@@ -32,6 +32,24 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${stockHistoryInstance?.data}">
+				<li class="fieldcontain">
+					<span id="data-label" class="property-label"><g:message code="stockHistory.data.label" default="Data" /></span>
+					
+						<span class="property-value" aria-labelledby="data-label"><g:formatDate date="${stockHistoryInstance?.data}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${stockHistoryInstance?.quantidade}">
+				<li class="fieldcontain">
+					<span id="quantidade-label" class="property-label"><g:message code="stockHistory.quantidade.label" default="Quantidade" /></span>
+					
+						<span class="property-value" aria-labelledby="quantidade-label"><g:fieldValue bean="${stockHistoryInstance}" field="quantidade"/></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:stockHistoryInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">
