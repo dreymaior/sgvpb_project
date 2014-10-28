@@ -20,11 +20,11 @@ class Stock {
 	def beforeUpdate() {
 		if (isDirty('quantidade')) {
 			    //new StockHistory(quantidade:this.quantidade, data:dataModificacao, user:UserContro).save()
-				new StockHistory(quantidade:this.quantidade, data:dataModificacao).save()
+				new StockHistory(user:usuario, quantidade:this.quantidade, data:dataModificacao).save()
 		}
 	}
 	def beforeInsert(){
-		new StockHistory(quantidade:this.quantidade, data:dataModificacao).save()
+		new StockHistory(user:usuario, quantidade:this.quantidade, data:dataModificacao).save()
 	}
 
 }
