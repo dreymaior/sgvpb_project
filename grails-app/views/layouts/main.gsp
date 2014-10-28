@@ -15,9 +15,20 @@
   		<asset:stylesheet src="application.css"/>
 		<asset:javascript src="application.js"/>
 		<g:layoutHead/>
+		<style type="text/css" media="screen">
+			#carinha {
+				background-color: #c0c0c0;
+				float: right;
+				margin: 2em 2em 2em;
+			}
+		</style>
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="localhost:8080/sgvpb_project/"><asset:image src="logo_sgvpb.png" alt="SGVPB"/></a></div>
+		<div id="grailsLogo" role="banner"><a href="localhost:8080/sgvpb_project/"><asset:image src="logo_sgvpb.png" alt="SGVPB"/></a>
+			<div id="carinha">
+			<g:mensLogin />
+			</div>
+		</div>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>

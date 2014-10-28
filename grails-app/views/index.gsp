@@ -94,6 +94,9 @@
 			    <li><a class="help" href="${createLink(uri: '/help/')}"><g:message code="Ajuda"/></a></li>		
 			</ul>			
 		</div>
+		<g:if test="${flash.message}">
+        	<div class="message">${flash.message}</div>
+      	</g:if>
 		<div id="status" role="complementary">
 			<h1>Application Status</h1>
 			<ul>

@@ -114,6 +114,7 @@ class UserController {
 		  flash.message = "Hello ${user.person}!"
 		  //redirect(controller:"entry", action:"list")
 		  redirect(uri:'/')
+		  //out << '<script>alert("Bem Vindo!");</script>'
 		}else{
 		  flash.message = "Sorry, ${params.login}. Please try again."
 		  redirect(action:"login")
