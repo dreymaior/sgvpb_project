@@ -48,7 +48,7 @@
 			</table>
 			<div class="pagination">
 				<g:paginate total="${clientOrderInstanceCount ?: 0}" />
-			</div>
+			</div>			
 		</div>
 	</body>
 </html>

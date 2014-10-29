@@ -69,6 +69,18 @@ grails.json.legacy.builder = false
 // enabled native2ascii conversion of i18n properties files
 grails.enable.native2ascii = true
 // packages to include in Spring bean scanning
+grails.resources.modules = {
+	jQuery{
+	resource url:'http://code.jquery.com/jquery-1.8.2.min.js', disposition: 'head'
+	}
+	
+	colorPicker{
+	dependsOn 'jQuery'
+	
+	resource url: '/js/jquery.minicolors.js', disposition: 'head'
+	resource url: '/css/jquery.minicolors.css'
+	}
+	}
 grails.spring.bean.packages = []
 // whether to disable processing of multi part requests
 grails.web.disable.multipart=false

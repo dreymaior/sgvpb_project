@@ -25,7 +25,7 @@
 		<g:message code="product.tipo.label" default="Tipo" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="tipo" required="" value="${productInstance?.tipo}"/>
+	<g:select name="tipo" from="${productInstance.constraints.tipo.inList}" required="" value="${productInstance?.tipo}" valueMessagePrefix="product.tipo"/>
 
 </div>
 
@@ -43,7 +43,7 @@
 		<g:message code="product.cor.label" default="Cor" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="cor" required="" value="${productInstance?.cor}"/>
+	<g:select name="cor" from="${productInstance.constraints.cor.inList}" required="" value="${productInstance?.cor}" valueMessagePrefix="product.cor"/>
 
 </div>
 
@@ -62,15 +62,6 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="pcgLucro" value="${fieldValue(bean: productInstance, field: 'pcgLucro')}" required=""/>
-
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: productInstance, field: 'clientOrder', 'error')} ">
-	<label for="clientOrder">
-		<g:message code="product.clientOrder.label" default="Client Order" />
-		
-	</label>
-	
 
 </div>
 

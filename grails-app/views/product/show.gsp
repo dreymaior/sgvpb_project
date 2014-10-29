@@ -86,17 +86,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${productInstance?.clientOrder}">
-				<li class="fieldcontain">
-					<span id="clientOrder-label" class="property-label"><g:message code="product.clientOrder.label" default="Client Order" /></span>
-					
-						<g:each in="${productInstance.clientOrder}" var="c">
-						<span class="property-value" aria-labelledby="clientOrder-label"><g:link controller="clientOrder" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></span>
-						</g:each>
-					
-				</li>
-				</g:if>
-			
 			</ol>
 			<g:form url="[resource:productInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

@@ -14,7 +14,6 @@ class Stock {
 	}
 	
 	def dataModificacao = new Date()
-		
 	//String usuarioModificacao = UserController.getUser()
 	
 	def beforeUpdate() {
