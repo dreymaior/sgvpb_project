@@ -2,15 +2,15 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: stockInstance, field: 'stockId', 'error')} required">
+<!-- <div class="fieldcontain ${hasErrors(bean: stockInstance, field: 'stockId', 'error')} required">
 	<label for="stockId">
-		<g:message code="stock.stockId.label" default="Stock Id" />
+		<g:message code="stock.id.label" default="Stock Id" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field name="stockId" type="number" value="${stockInstance.stockId}" required=""/>
+	<g:field name="stockId" type="number" readonly="readonly" value="${stockInstance.id}" required=""/>
 
 </div>
-
+-->
 <div class="fieldcontain ${hasErrors(bean: stockInstance, field: 'nome', 'error')} required">
 	<label for="nome">
 		<g:message code="stock.nome.label" default="Nome" />
@@ -34,7 +34,7 @@
 		<g:message code="stock.usuario.label" default="Usuario" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="usuario" required="" value="${stockInstance?.usuario}"/>
+	<g:textField name="usuario" readonly="readonly" value="${session.user}"/>
 
 </div>
 

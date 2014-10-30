@@ -2,6 +2,7 @@
 /com/
 /dbdoc/
 /grails/
+/hibernate/
 /hibernate.cfg.xml
 /javascripts/
 /layouts/
@@ -90,4 +91,3 @@
 /UrlMappings.class
 /resources$_run_closure1.class
 /resources.class
-/hibernate/

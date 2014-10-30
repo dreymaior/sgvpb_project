@@ -12,18 +12,19 @@ class Stock {
 		nome(nullable:false, blank:false)
 		quantidade(nullable:true, blank:true)
 	}
-	
 	def dataModificacao = new Date()
 	//String usuarioModificacao = UserController.getUser()
 	
 	def beforeUpdate() {
 		if (isDirty('quantidade')) {
-			    //new StockHistory(quantidade:this.quantidade, data:dataModificacao, user:UserContro).save()
-				new StockHistory(user:usuario, quantidade:this.quantidade, data:dataModificacao).save()
+				//new StockHistory(quantidade:this.quantidade, data:dataModificacao, user:UserContro).save()
+				new StockHistory(user:usuario, quantidade:this.quantidade, data:dataModificacao, nome:nome).save()
 		}
 	}
 	def beforeInsert(){
 		new StockHistory(user:usuario, quantidade:this.quantidade, data:dataModificacao).save()
 	}
-
+	def beforeDelete(){
+		new StockHistory(user:usuario, quantidade:this.quantidade, data:dataModificacao, nome:nome).save()
+	}
 }

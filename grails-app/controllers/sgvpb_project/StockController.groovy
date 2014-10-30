@@ -101,4 +101,20 @@ class StockController {
             '*'{ render status: NOT_FOUND }
         }
     }
+	def beforeInterceptor = [ action:this.&auth, except:["index"]]
+	
+	def auth(){
+		if(!session.user) {
+			redirect(controller:"user", action:"login")
+			return false
+		} else {
+			if(!((session.user.person.role == "Administrador") || (session.user.person.role == "Vendedor"))){
+				redirect(uri:"/stock/")
+				flash.message = "Voce é um ${session.user.person.role}"
+			} else {
+				//redirect(controller:"product", action:"create")
+			}
+		}
+	}
+
 }

@@ -50,6 +50,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${stockHistoryInstance?.nome}">
+				<li class="fieldcontain">
+					<span id="nome-label" class="property-label"><g:message code="stockHistory.nome.label" default="Nome" /></span>
+					
+						<span class="property-value" aria-labelledby="nome-label"><g:fieldValue bean="${stockHistoryInstance}" field="nome"/></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:stockHistoryInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

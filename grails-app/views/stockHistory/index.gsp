@@ -30,6 +30,8 @@
 					
 						<g:sortableColumn property="quantidade" title="${message(code: 'stockHistory.quantidade.label', default: 'Quantidade')}" />
 					
+						<g:sortableColumn property="nome" title="${message(code: 'stockHistory.nome.label', default: 'Nome')}" />
+					
 					</tr>
 				</thead>
 				<tbody>
@@ -41,6 +43,8 @@
 						<td><g:formatDate date="${stockHistoryInstance.data}" /></td>
 					
 						<td>${fieldValue(bean: stockHistoryInstance, field: "quantidade")}</td>
+					
+						<td>${fieldValue(bean: stockHistoryInstance, field: "nome")}</td>
 					
 					</tr>
 				</g:each>
