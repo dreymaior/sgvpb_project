@@ -81,22 +81,7 @@
 		</style>
 	</head>
 	<body>
-		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-			    <li><a class="list" href="${createLink(uri: '/clientOrder/')}"><g:message code="Pedidos"/></a></li>
-				<li><a class="list" href="${createLink(uri: '/product/')}"><g:message code="Produtos"/></a></li>	
-				<li><a class="list" href="${createLink(uri: '/colaborator/')}"><g:message code="Clientes"/></a></li>
-				<li><a class="list" href="${createLink(uri: '/vendor/')}"><g:message code="Fornecedores"/></a></li>
-			    <li><g:loginControl /></li> <!-- LOGIN -->
-			<!--   <li><a class="login" href="${createLink(uri: '/logout/')}"><g:message code="Logout"/></a></li> -->
-			    <li><a class="help" href="${createLink(uri: '/help/')}"><g:message code="Ajuda"/></a></li>		
-			</ul>			
-		</div>
-		<g:if test="${flash.message}">
-        	<div class="message">${flash.message}</div>
-      	</g:if>
+		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>		   	
 		<div id="status" role="complementary">
 			<h1>Application Status</h1>
 			<ul>

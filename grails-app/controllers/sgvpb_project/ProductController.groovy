@@ -104,7 +104,7 @@ class ProductController {
 	
 	// --------- Restricao -----------
 	
-	def beforeInterceptor = [ action:this.&auth, except:["index"]]
+	def beforeInterceptor = [ action:this.&auth]
 	
 	def auth(){
 		if(!session.user) {
@@ -112,11 +112,9 @@ class ProductController {
 			return false
 		} else {
 			if(!((session.user.person.role == "Administrador") || (session.user.person.role == "Vendedor"))){
-				redirect(uri:"/product/")
-				flash.message = "Voce é um ${session.user.person.role}"
-			} else {
-				//redirect(controller:"product", action:"create")
-			}
+				redirect(uri:"/")
+				flash.message = "Voce nao possui autorizacao para acessar esta pagina!"
+			} 
 		}
 	}
 }

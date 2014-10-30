@@ -101,4 +101,20 @@ class ColaboratorController {
             '*'{ render status: NOT_FOUND }
         }
     }
+	
+	// --------- Restricao -----------
+	
+	def beforeInterceptor = [ action:this.&auth]
+	
+	def auth(){
+		if(!session.user) {
+			redirect(controller:"user", action:"login")
+			return false
+		} else {
+			if(!((session.user.person.role == "Administrador") || (session.user.person.role == "Vendedor"))){
+				redirect(uri:"/")
+				flash.message = "Voce nao possui autorizacao para acessar esta pagina!"
+			} 
+		}
+	}
 }

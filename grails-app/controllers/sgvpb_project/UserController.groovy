@@ -102,29 +102,45 @@ class UserController {
         }
     }
 	
-	//Se der Merlin voltar aqui
 	def scaffold = User
 	
-	  def login = {}
+	def help = {}
 	
-	  def authenticate = {
+	def login = {}
+	
+	def authenticate = {
 		def user = User.findByLoginAndPassword(params.login, params.password)
+		
 		if(user){
 		  session.user = user
-		  flash.message = "Hello ${user.person}!"
-		  //redirect(controller:"entry", action:"list")
+		  flash.message = "Ola ${user.person}!"
 		  redirect(uri:'/')
-		  //out << '<script>alert("Bem Vindo!");</script>'
 		}else{
-		  flash.message = "Sorry, ${params.login}. Please try again."
+		  flash.message = "Desculpe, ${params.login}. Login ou senha incorreta! Tente novamente ou contate o administrador."
 		  redirect(action:"login")
 		}
-	  }
+	}
 	
-	  def logout = {
-		flash.message = "Goodbye ${session.user.person}"
+	def logout = {
+		flash.message = "Ate logo, ${session.user.person}"
 		session.user = null
-		//redirect(controller:"entry", action:"list")
 		redirect(uri:'/')
-	  }
+	}
+	  
+	   
+	// --------- Restricao -----------
+	  
+	def beforeInterceptor = [ action:this.&auth, except:[ 'login', 'authenticate', 'help' ]]
+	  
+	def auth(){
+		if(!session.user) {
+			redirect(controller:"user", action:"login")
+			return false
+		} else {
+			if(!(session.user.person.role == "Administrador")){
+				redirect(uri:"/")
+				flash.message = "Voce nao possui autorizacao para acessar esta pagina!"
+			}
+		}
+	}
 }

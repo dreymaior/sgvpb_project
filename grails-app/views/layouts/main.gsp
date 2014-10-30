@@ -29,7 +29,22 @@
 			<g:mensLogin />
 			</div>
 		</div>
+		
+		
+		<div class="nav" role="navigation">
+			<ul>
+				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
+			    <li><a class="list" href="${createLink(uri: '/clientOrder/')}"><g:message code="Pedidos"/></a></li>
+				<li><a class="list" href="${createLink(uri: '/product/')}"><g:message code="Produtos"/></a></li>	
+				<li><a class="list" href="${createLink(uri: '/colaborator/')}"><g:message code="Clientes"/></a></li>
+				<li><a class="list" href="${createLink(uri: '/vendor/')}"><g:message code="Fornecedores"/></a></li>
+			    <li><g:loginControl /></li>			
+			    <li><a class="help" href="${createLink(uri: '/user/help')}"><g:message code="Ajuda"/></a></li>		
+			</ul>		
+		</div>
+				
 		<g:layoutBody/>
+		
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 	</body>
