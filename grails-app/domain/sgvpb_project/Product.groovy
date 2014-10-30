@@ -3,7 +3,6 @@ package sgvpb_project
 import org.apache.commons.collections.*;
 
 class Product {
-	//int index
 	String productId
 	String descricao
 	float valorUnit
@@ -17,7 +16,6 @@ class Product {
 	static belongsTo = [ clientOrder:ClientOrder ]
 	
 	static constraints = {
-		//index(blank:false)
 		productId(nullable:false, blank:false)
 		descricao(nullable:false, blank:false)
 		tipo(inList:["6 Gomos","7 Gomos","Americano", "Ciclista", "Japonês" ], nullable:false, blank:false)
@@ -74,13 +72,7 @@ class Product {
 					 "1220", "4146", "5975", "8581", "9046", "9159", "9575" ], nullable:false, blank:false)
 		valorUnit(nullable:false, blank:false, max:999F, scale:2)
 		pcgLucro(nullable:false, blank:false, max:100F, scale:2)
-		//clientOrder(nullable:true)
 	}
-	/*
-	static mapping = {
-		index column:"product_index"
-	}
-	*/
 	
 	String toString() {
 		productId

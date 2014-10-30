@@ -34,16 +34,7 @@
 		<g:message code="clientOrder.products.label" default="Products" />
 		
 	</label>
-	
-<ul class="one-to-many">
-<g:each in="${clientOrderInstance?.products?}" var="p">
-    <li><g:link controller="product" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
-</g:each>
-<li class="add">
-<g:link controller="product" action="create" params="['clientOrder.id': clientOrderInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'product.label', default: 'Product')])}</g:link>
-</li>
-</ul>
-
+	<g:select name="products" from="${sgvpb_project.Product.list()}" multiple="multiple" optionKey="id" size="5" value="${clientOrderInstance?.products*.id}" class="many-to-many"/>
 
 </div>
 

@@ -21,4 +21,8 @@ class LoginTagLib {
 			out << "${session.user.person}"
 		}
 	}
+	
+	def redirectClient = {
+		
+	}
 }
