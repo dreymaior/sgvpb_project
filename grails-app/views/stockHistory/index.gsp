@@ -12,7 +12,6 @@
 		<div class="nav" role="navigation">
 			<ul>
 				
-				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
 			</ul>
 		</div>
 		<div id="list-stockHistory" class="content scaffold-list" role="main">
@@ -32,6 +31,8 @@
 					
 						<g:sortableColumn property="nome" title="${message(code: 'stockHistory.nome.label', default: 'Nome')}" />
 					
+						<g:sortableColumn property="situacao" title="${message(code: 'stockHistory.situacao.label', default: 'Situacao')}" />
+					
 					</tr>
 				</thead>
 				<tbody>
@@ -45,6 +46,8 @@
 						<td>${fieldValue(bean: stockHistoryInstance, field: "quantidade")}</td>
 					
 						<td>${fieldValue(bean: stockHistoryInstance, field: "nome")}</td>
+					
+						<td>${fieldValue(bean: stockHistoryInstance, field: "situacao")}</td>
 					
 					</tr>
 				</g:each>

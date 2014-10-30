@@ -7,6 +7,7 @@ class StockHistory {
 	Date data 
 	Double quantidade
 	String nome
+	String situacao
 	//String descricao
 	
 	static constraints ={
@@ -14,7 +15,8 @@ class StockHistory {
 		data(nullable:false, blank:false);
 		quantidade(nullable:false,blank:false);
 		nome(nullable:false,blank:false);
-		//descricao(blank:false);
+		situacao(nullable:false,blank:false);
+		//descricao (blank:false);
 
 	}
 }

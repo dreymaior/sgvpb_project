@@ -38,3 +38,12 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: stockHistoryInstance, field: 'situacao', 'error')} required">
+	<label for="situacao">
+		<g:message code="stockHistory.situacao.label" default="Situacao" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="situacao" required="" value="${stockHistoryInstance?.situacao}"/>
+
+</div>
+
